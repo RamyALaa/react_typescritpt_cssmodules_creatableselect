@@ -29,7 +29,7 @@ const Select = ({multiple , value, onChange, options} : SelectProps) => {
         multiple ?onChange([]) :  onChange(undefined)
         
     }
-
+     // i don't use useState because I only need the data on submition
     const containerRef = useRef<HTMLDivElement>(null);
 
     const selectOption = (option : SelectOption) =>{
